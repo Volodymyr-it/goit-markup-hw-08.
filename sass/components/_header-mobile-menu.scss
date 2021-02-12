@@ -1,0 +1,37 @@
+.menu-button {
+  display: inline-flex;
+  margin-right: 0;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+.header {
+  position: relative;
+}
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  background-color: $primary-white-color;
+  border: 1px solid black;
+
+  &.is-open {
+    display: block;
+  }
+}

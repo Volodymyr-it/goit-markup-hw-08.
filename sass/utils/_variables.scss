@@ -1,0 +1,23 @@
+/* #ffffff; основний білий колір*/
+/* #E5E5E5; білий колір фону*/
+/* #F5F4FA; темніший білий вторинний колір фону */
+/* #2F303A; сірий фон футтера*/
+/* #757575; сірий колір основного тексту*/
+/* #212121; чорний колір заголовків та підзаголовків*/
+/* #2196F3; блакитний колір акцетів*/
+$primary-white-color: #ffffff;
+$main-background-color: #e5e5e5;
+$second-background-color: #f5f4fa;
+$dark-background-color: #2f303a;
+
+$accent-color: #2196f3;
+
+$main-text-color: #757575;
+$title-text-color: #212121;
+$footer-tel-color: rgba(255, 255, 255, 0.6);
+
+$animation-duration: 250ms;
+$animation-type: linear;
+
+$main-font-family: "Roboto" sans-serif;
+$secondary-font-family: "Raleway", sans-serif;

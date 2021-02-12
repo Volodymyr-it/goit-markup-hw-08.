@@ -1,0 +1,62 @@
+/* common */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 1600px;
+  }
+}
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+a {
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  font-family: Roboto, sans-serif;
+}
+.order-button {
+  cursor: pointer;
+  border-radius: 4px;
+}
+.invisible {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+//portfolio-hero default
+.hero {
+  background-color: primary-white-color;
+  padding: 94px 0;
+  border-top: 1px solid #ececec;
+}
+* {
+  //fonts
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+body.modal-open {
+  overflow: hidden;
+}
