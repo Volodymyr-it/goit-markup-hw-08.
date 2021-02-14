@@ -442,6 +442,18 @@ body.modal-open {
   padding: 52px 0;
 }
 
+.nav-item {
+  display: block;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 155px;
+  padding: 40px 0;
+}
+
 .nav-item .header-feedback + .header-feedback {
   margin-left: 50px;
 }
@@ -466,6 +478,13 @@ body.modal-open {
   background-color: #2196f3;
 }
 
+@media screen and (max-width: 767px) {
+  .header-link {
+    padding: 8px 0;
+    margin: px 0;
+  }
+}
+
 .current-link .header-link::after,
 .header-link:focus::after,
 .header-link:hover::after {
@@ -474,17 +493,6 @@ body.modal-open {
 
 .current-link {
   color: #2196f3;
-}
-
-.header-feedback {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: auto;
-  fill: #757575;
 }
 
 .envelope-icon {
@@ -500,7 +508,7 @@ body.modal-open {
 @media screen and (max-width: 767px) {
   .header-links,
   .header-contacts {
-    display: none;
+    display: block;
   }
 }
 
@@ -536,10 +544,24 @@ body.modal-open {
 
 .header-contacts {
   margin-left: auto;
+  color: #757575;
+}
+
+@media screen and (max-width: 767px) {
+  .header-contacts {
+    padding-bottom: 60px;
+  }
 }
 
 /* feedback */
 .header-feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: auto;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -547,6 +569,17 @@ body.modal-open {
   letter-spacing: 0.02em;
   margin-left: 50px;
   margin-right: auto;
+  fill: #757575;
+}
+
+@media screen and (max-width: 767px) {
+  .header-feedback {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 16px;
+    margin-left: 0;
+  }
 }
 
 .menu-button {

@@ -17,17 +17,45 @@
   </head>
 
   <body>
-    <header>
+     <header class="header">
       <div class="container">
         <nav class="header-nav">
           <a class="logo logo-font" href="./"
             >Web<span class="studio">Studio</span></a
           >
+          <nav class="nav-mobile">
+            <button
+              type="button"
+              class="menu-button is-open"
+              aria-expanded="false"
+              aria-controls="menu-container"
+              data-menu-button
+            >
+              <svg
+                width="19"
+                height="19"
+                aria-label="Переключатель мобильного меню"
+              >
+                <use
+                  class="icon-cross"
+                  href="./optim-svg/symbol-defs.svg#icon-cross"
+                ></use>
+                <use
+                  class="icon-menu"
+                  href="./optim-svg/symbol-defs.svg#icon-menu"
+                ></use>
+              </svg>
+            </button>
+            
+           
+          </nav>
+          <div class="menu-container is-open" id="menu-container" data-menu>
+           
           <ul class="header-links">
-            <li class="nav-item">
+            <li class="nav-item current-link">
               <a class="header-link" href="./index.html">Студия</a>
             </li>
-            <li class="nav-item curent-link">
+            <li class="nav-item">
               <a class="header-link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="nav-item">
@@ -35,10 +63,10 @@
             </li>
           </ul>
 
-          <!-- fedback -->
+          <!-- feedback -->
           <ul class="header-contacts">
             <li>
-              <a class="header-fedback" href="mailto:info@devstudio.com">
+              <a class="header-feedback" href="mailto:info@devstudio.com">
                 <svg class="envelope-icon" height="12" width="16">
                   <use href="./optim-svg/symbol-defs.svg#icon-envelope"></use>
                 </svg>
@@ -46,8 +74,8 @@
               </a>
             </li>
             <li>
-              <a class="header-fedback" href="tel:+380961111111">
-                <svg class="smarphone-icon" height="16" width="10">
+              <a class="header-feedback" href="tel:+380961111111">
+                <svg class="smartphone-icon" height="16" width="10">
                   <use href="./optim-svg/symbol-defs.svg#icon-smartphone"></use>
                 </svg>
                 +38 096 111 11 11
@@ -55,7 +83,10 @@
             </li>
           </ul>
         </nav>
-      </div>
+        </div> 
+         </div> 
+     
+   
     </header>
 
     <main class="hero">
