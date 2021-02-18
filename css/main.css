@@ -884,6 +884,12 @@ body.modal-open {
   border-radius: 4px;
 }
 
+.main-picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /*header logo */
 .logo {
   margin-left: 0;
