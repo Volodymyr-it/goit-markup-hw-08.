@@ -92,23 +92,16 @@
     <main>
       <section class="main-section overlay">
         <div class="container">
-          <picture class="main-picture">
-            <source srcset=
-            "
-         ./optim-backgrounds/overlay-480.webp    w480, 
-         ./optim-backgrounds/overlay-768.webp    w768, 
-         ./optim-backgrounds/overlay-960.webp    w960, 
-         ./optim-backgrounds/overlay-1600.webp   w1600 
-            "
-          type="image/webp">
-            <img  alt="" srcset=
-            "
-         ./optim-backgrounds/overlay-480.jpg    w480, 
-         ./optim-backgrounds/overlay-768.jpg    w768, 
-         ./optim-backgrounds/overlay-960.jpg    w960, 
-         ./optim-backgrounds/overlay-1600.jpg   w1600 
-            " 
-         src="./optim-backgrounds/overlay-480.jpg">
+          <picture class="main-picture"> 
+            <source srcset="./optim-backgrounds/overlay-480.webp" type="image/webp" media="(max-width: 570px )"/>
+            <source srcset="./optim-backgrounds/overlay-480.jpg" media="(max-width: 570px )"/>
+             <source srcset="./optim-backgrounds/overlay-768.webp" type="image/webp" media="(max-width: 768px )"/>
+            <source srcset="./optim-backgrounds/overlay-768.jpg" media="(max-width: 768px )"/>
+           <source srcset="./optim-backgrounds/overlay-960.webp" type="image/webp" media="(max-width: 960px )"/>
+            <source srcset="./optim-backgrounds/overlay-960.jpg" media="(max-width: 960px )"/>
+            <source srcset="./optim-backgrounds/overlay-1600.webp" type="image/webp" media="(min-width: 961px )"/>
+            <source srcset="./optim-backgrounds/overlay-1600.jpg" media="(min-width: 961px )"/> 
+            <img src="./optim-backgrounds/overlay-768.jpg" alt="люди в офисе">
         </picture>
          
           <h1>Эффективные решения для вашего бизнеса</h1>
