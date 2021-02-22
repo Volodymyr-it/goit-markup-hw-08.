@@ -17,7 +17,17 @@
 //     color: $primary-white-color;
 //   }
 // }
+.main-thumb {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
 .overlay {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
   width: 1600px;
   height: 600px;
   margin-left: auto;
@@ -32,17 +42,19 @@
     url("../optim-backgrounds/overlay-480\ .jpg");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   @media screen and (max-width: 767px) {
-    width: 480px;
-    height: 400px;
+    width: 100%;
+    height: auto;
+  }
+  @media screen and (max-width: 576px) {
+    width: 100%;
+    height: auto;
+    background-size: 480px 400px;
   }
 }
-.main-picture {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-// /* order a service */
+
+/* order a service */
 // .order-button {
 //   background-color: $accent-color;
 //   color: $primary-white-color;

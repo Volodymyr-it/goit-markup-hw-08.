@@ -90,20 +90,22 @@
     </header>
     <!-- main -->
     <main>
-      <section class="main-section overlay">
-        <div class="container">
-          <picture class="main-picture"> 
-            <source srcset="./optim-backgrounds/overlay-480.webp" type="image/webp" media="(max-width: 570px )"/>
-            <source srcset="./optim-backgrounds/overlay-480.jpg" media="(max-width: 570px )"/>
-             <source srcset="./optim-backgrounds/overlay-768.webp" type="image/webp" media="(max-width: 768px )"/>
-            <source srcset="./optim-backgrounds/overlay-768.jpg" media="(max-width: 768px )"/>
-           <source srcset="./optim-backgrounds/overlay-960.webp" type="image/webp" media="(max-width: 960px )"/>
-            <source srcset="./optim-backgrounds/overlay-960.jpg" media="(max-width: 960px )"/>
-            <source srcset="./optim-backgrounds/overlay-1600.webp" type="image/webp" media="(min-width: 961px )"/>
-            <source srcset="./optim-backgrounds/overlay-1600.jpg" media="(min-width: 961px )"/> 
-            <img src="./optim-backgrounds/overlay-768.jpg" alt="люди в офисе">
+      <section class="main-section overlay container">
+          <div class="main-thumb">
+          <picture > 
+            <source srcset="./optim-backgrounds/overlay-480.webp 480w" type="image/webp" media="(max-width: 570px )"/>
+            <source srcset="./optim-backgrounds/overlay-480.jpg 480w" media="(max-width: 570px )"/>
+            <source srcset="./optim-backgrounds/overlay-768.webp 768w" type="image/webp" media="(max-width: 768px )"/>
+            <source srcset="./optim-backgrounds/overlay-768.jpg 768w" media="(max-width: 768px )"/>
+            <source srcset="./optim-backgrounds/overlay-960.webp 960w" type="image/webp" media="(max-width: 960px )"/>
+            <source srcset="./optim-backgrounds/overlay-960.jpg 960w" media="(max-width: 960px )"/>
+            <source srcset="./optim-backgrounds/overlay-1600.webp 1600w" type="image/webp" media="(min-width: 961px )"/>
+            <source srcset="./optim-backgrounds/overlay-1600.jpg 1600w" media="(min-width: 961px )"/> 
+            <img class="main-picture" src="./optim-backgrounds/overlay-480.jpg" 
+           
+              alt="люди в офисе">
         </picture>
-         
+         </div>
           <h1>Эффективные решения для вашего бизнеса</h1>
           <button class="order-button" data-modal-open>Заказать услугу</button>
         </div>
